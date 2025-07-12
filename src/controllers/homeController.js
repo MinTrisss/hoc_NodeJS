@@ -1,5 +1,7 @@
+const connection = require('../config/database')
+
 const getHomepage = (req,res) =>{
-      res.send('HomeController')
+      return res.render('homePage.ejs')
 }
 
 const exPage = (req,res) => {
