@@ -15,10 +15,12 @@ connection.query(
       function(err,results,fields) {
             console.log("Result= ",results);
       }
-
 )
+//config req.body
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
 
-app.use('/test', webRoutes)
+app.use('/', webRoutes)
 app.listen(port, hostname, ()=> {
       console.log(`Server is running on port ${port}`)
 })

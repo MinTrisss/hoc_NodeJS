@@ -28,3 +28,17 @@
       background-color: #04AA6D;
       color: white;
 }
+
+.form{
+      width: 500px;
+      margin: 0 auto;
+      padding-top: 25px;
+}
+.input-group{
+      padding: 10px;
+}
+
+.submit-btn{
+      margin: 10px;
+      cursor: pointer;
+}
