@@ -10,12 +10,12 @@ const hostname = process.env.HOSTNAME
 
 configViewEngine(app)
 
-connection.query(
-      'select * from Users u;',
-      function(err,results,fields) {
-            console.log("Result= ",results);
-      }
-)
+// connection.query(
+//       'select * from Users u;',
+//       function(err,results,fields) {
+//             console.log("Result= ",results);
+//       }
+// )
 //config req.body
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
